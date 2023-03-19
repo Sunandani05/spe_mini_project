@@ -1,0 +1,2 @@
+[container]
+client_usr1 ansible_host=172.16.145.32 ansible_connection=ssh ansible_ssh_user=client_usr1 ansible_ssh_pass=hello
