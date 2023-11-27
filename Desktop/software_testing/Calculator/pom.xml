@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>Calculator</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>18</maven.compiler.source>
+        <maven.compiler.target>18</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>1.14.2</version> <!-- Check for the latest version -->
+                <configuration>
+                    <mutators>
+                        <!--<mutator>CONDITIONALS_BOUNDARY</mutator>-->
+                        <mutator>INCREMENTS</mutator>
+                        <mutator>INVERT_NEGS</mutator>
+                        <mutator>MATH</mutator>
+                        <!-- Uncomment or add other unit testing mutation operators as needed -->
+
+                        <!--<mutator>DATA_FLOW</mutator>-->
+                        <!--<mutator>INTERFACE</mutator>-->
+                        <!--<mutator>DEPENDENCIES</mutator>-->
+                        <!-- Uncomment or add other integration mutation operators as needed -->
+                    </mutators>
+
+                    <!-- <mutators> -->
+                        <!-- Uncomment or add the mutators you want to include -->
+                        <!-- <mutator>CONDITIONALS_BOUNDARY</mutator> -->
+                        <!-- <mutator>INVERT_NEGS</mutator> -->
+                        <!-- <mutator>MATH</mutator> -->
+                        <!-- ... other mutators ... -->
+                    <!-- </mutators> -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- ... other dependencies ... -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version> <!-- Use the latest version -->
+            <scope>test</scope>
+
+        </dependency>
+
+
+    </dependencies>
+
+
+</project>

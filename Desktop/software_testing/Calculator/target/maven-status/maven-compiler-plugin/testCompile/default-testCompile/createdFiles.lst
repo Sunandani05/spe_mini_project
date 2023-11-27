@@ -1,0 +1,12 @@
+org\example\MemoryOps_test.class
+org\example\Factorial_test.class
+org\example\Exponential_test.class
+org\example\Arithmetic_test.class
+org\example\Trigonometric_test.class
+org\example\BinHexOct_test.class
+org\example\Constants_test.class
+org\example\Logarithmic_test.class
+org\example\AngularModeConversion_test.class
+org\example\Hyperbolic_test.class
+org\example\ParenthesesForGrouping_test.class
+org\example\Statistical_test.class
